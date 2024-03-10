@@ -1,0 +1,202 @@
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #EB9B00;
+    --cor-terciaria: #002F52;
+    --cor-quartenaria: #000000;
+    --cor-de-fundo-primaria: #EBECEE;
+    --cor-de-fundo-secundaria: #FFFFFF;
+    --cor-de-fundo-terciaria: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --cor-de-fundo-quartenaria: #EB9B00;
+    --fonte-primaria: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}
+
+.cabecalho {
+    background-color: var(cor-de-fundo-secundaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked~.menu__lista {
+    display: block;
+}
+
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__item {
+    padding: 0.7em 0.5em;
+}
+
+.menu__lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.menu__lista__titulo, .menu__lista__item {
+    padding: 0.7em 0.5em;
+    background-color: var(--cor-de-fundo-secundaria);
+}
+
+.menu__lista__titulo {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu__lista__item__link {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container__1024__titulo {
+    display: none;
+}
+
+.container__1024__opcoes {
+    display: none;
+}
+
+.container__item__texto {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__item-transparente {
+        display: none;
+    }
+
+    .container__1024__titulo {
+        color: var(--cor-quartenaria);
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__1024__titulo--negrito {
+        color: var(--cor-quartenaria);
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .container__1024__opcoes {
+        display: flex;
+        align-items: center;
+    }
+
+    .container__1024__opcoes__botao {
+        display: none;
+    }
+    
+    .container__1024__opcoes__botao:checked~.menu__1024__lista {
+        display: block;
+    }
+    
+    .cabecalho__opcoes__menu-hamburguer {
+        color: var(--cor-quartenaria);
+        font-family: var(--fonte-primaria);
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .cabecalho__opcoes__menu-hamburguer:hover {
+        color: var(--cor-primaria);
+        font-family: var(--fonte-primaria);
+        font-size: 16px;
+        font-weight: 400;
+        background: var(--cor-de-fundo-terciaria);
+        padding: 0.5em 0.5em;
+    }
+
+    .menu__1024__lista {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+    
+    .menu__1024__lista__item {
+        padding: 0.7em 0.5em;
+        background-color: var(--cor-de-fundo-secundaria);
+    }
+    
+    .menu__1024__lista__item:hover {
+        color: var(--cor-primaria);
+        background: var(--cor-de-fundo-terciaria);
+        padding: 0.7em 0.5em;
+    }
+
+    .menu__1024__lista__item__link {
+        text-decoration: none;
+        color: var(--cor-terciaria);
+        font-family: var(--fonte-primaria);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .menu__1024__lista__item__link:hover {
+        color: var(--cor-primaria);
+        font-family: var(--fonte-primaria);
+    }
+
+    .container__1024__opcoes__item {
+        padding: 0 1em;
+    }
+
+    .container__1024__opcoes__item__link {
+        text-decoration: none;
+        color: var(--cor-quartenaria);
+        font-family: var(--fonte-primaria);
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__1728__item {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .container__1024__opcoes {
+        margin-right: auto;
+        margin-left: 2em;
+    }
+
+    .container__item__texto {
+        display: block;
+        margin-left: 1em;
+        color: var(--cor-quartenaria);
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+}

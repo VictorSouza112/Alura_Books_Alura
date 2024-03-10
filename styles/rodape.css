@@ -1,0 +1,79 @@
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #EB9B00;
+    --cor-terciaria: #002F52;
+    --cor-quartenaria: #000000;
+    --cor-de-fundo-primaria: #EBECEE;
+    --cor-de-fundo-secundaria: #FFFFFF;
+    --cor-de-fundo-terciaria: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --cor-de-fundo-quartenaria: #EB9B00;
+    --fonte-primaria: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}
+
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--cor-de-fundo-secundaria);
+    padding: 1em;
+}
+
+.rodape__titulo {
+    color: var(--cor-quartenaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rodape__lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+    
+    .rodape__lista {
+        display: block;
+    }
+
+    .rodape__lista__titulo {
+        color: #858585;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+
+    .rodape__lista__item {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .rodape__lista__item__link {
+        text-decoration: none;
+        color: #474646;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        background-color: var(--cor-de-fundo-primaria);
+    }
+    
+    .rodape__lista {
+        border-left: 1px solid gray;
+        padding-left: 1em;
+    }
+}

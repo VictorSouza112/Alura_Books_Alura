@@ -1,0 +1,85 @@
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #EB9B00;
+    --cor-terciaria: #002F52;
+    --cor-quartenaria: #000000;
+    --cor-de-fundo-primaria: #EBECEE;
+    --cor-de-fundo-secundaria: #FFFFFF;
+    --cor-de-fundo-terciaria: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --cor-de-fundo-quartenaria: #EB9B00;
+    --fonte-primaria: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}
+
+.primeiro__card {
+    display: flex;
+    margin: 1em 0.75em 1em 0.75em;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1em 0em 1em 1em ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    justify-content: center;
+}
+
+.primeiro__card__segundo {
+    display: grid;
+}
+
+.primeiro__card__primeiro__titulo {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.primeiro__card__primeiro__subtitulo {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.primeiro__card__primeiro__texto {
+    color: var(--cor-quartenaria);
+    font-family: var(--fonte-primaria);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.primeiro__card__primeiro__botoes {
+    margin: 0.5em 1em 0em 0.5em;
+    display: flex;
+    gap: 1em;
+}
+
+.primeiro__card__segundo {
+    text-align: center;
+}
+
+.primeiro__card__segundo__imagem {
+    margin-bottom: 1em;
+}
+
+.primeiro__card__segundo__texto {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--cor-de-fundo-quartenaria);
+    padding: 0.5em 1.3em 0.5em 1.3em;
+}
+
+@media screen and (min-width: 1024px) {
+    .primeiro__card {
+        width: 50%;
+        margin: 2em auto;
+    }
+
+    .primeiro__card__primeiro__botoes {
+        margin: 1.5em 1em 0em 0.5em;
+        display: flex;
+        gap: 1em;
+    }
+}
