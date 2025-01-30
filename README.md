@@ -1,7 +1,7 @@
 # Alura_Books_Alura
 Este repositório é um site responsivo (podendo ser usado em dispositivos mobile, tablet ou desktop) que criei enquanto realizava o curso "HTML e CSS: responsividade com mobile-first" da Alura.
 
-Para acessar o site use o seguinte link: https://alura-books-alura-eosin.vercel.app/
+Para acessar o site use o seguinte link: https://alura-books-victorsouza112.vercel.app/
 
 Para poder visualizar as versões siga os seguintes passos:
 
